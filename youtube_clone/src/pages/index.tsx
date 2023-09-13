@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import VideoCard from '@/components/VideoCard'
+import VideoGrid from '@/components/VideoGrid'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -18,9 +19,15 @@ export default function Home({title, channelName, views, timestamp, thumbnail}) 
 
   return (
    <div>
-    <VideoCard image="som.jpg" title={"SOM dropped from NRG!"} profilePic ="tarik.jpg" channelName="somcs" views="2M" timestamp="4 days"/>
-    <VideoCard image="subroza.jpg" title={"Art of roza ult!"} profilePic ="sukuna.jpg" channelName="subroza"views="100K" timestamp="2 hours"/>
-      
+    {/* <VideoCard 
+      image="som.jpg" 
+      title={"SOM dropped from NRG!"} 
+      profilePic ="tarik.jpg" 
+      channelName="somcs" 
+      views="2M" 
+      timestamp="4 days"
+      /> */}
+    <VideoGrid />
    </div>
   )
 }
